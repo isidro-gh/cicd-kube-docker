@@ -26,6 +26,11 @@ pipeline {
             }
         }
 
+        stage('UNIT TEST'){
+           steps {
+                sh 'JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java && mvn test -X'
+            }
+        }
 
 
         stage('INTEGRATION TEST'){
