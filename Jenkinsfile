@@ -26,11 +26,11 @@ pipeline {
             }
         }
 
-        stage('UNIT TEST'){
-            steps {
-                sh 'mvn test -X'
-            }
-        }
+        # stage('UNIT TEST'){
+        #     steps {
+        #         sh 'mvn test -X'
+        #     }
+        # }
 
         stage('INTEGRATION TEST'){
             steps {
